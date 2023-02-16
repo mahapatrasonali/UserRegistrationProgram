@@ -5,7 +5,7 @@
         public static void Main(string[] args)
         {
             Console.WriteLine("Welcome To User Registration Program");
-            UserName.PhoneNumberValidating();
+            UserName.Passmin8char();
 
 
 

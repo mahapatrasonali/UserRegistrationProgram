@@ -9,11 +9,11 @@ namespace UserRegistration
 {
     public class UserName
     {
-        public static void PhoneNumberValidating()      //UC4
+        public static void Passmin8char()      //UC5
         {
-            Console.WriteLine("Enter your PhoneNumber");
+            Console.WriteLine("Enter your Password");
             string userInput = Console.ReadLine();
-            string regexCondition = "^(+)[0-9]{2}[ ][0-9]{10}$";
+            string regexCondition = "^[a-zA-Z0-9]{8,}$";
             Iteration(userInput, regexCondition);
         }
 

@@ -9,14 +9,14 @@ namespace UserRegistration
 {
     public class UserName
     {
-        public static void FirstName()      //UC1
+        public static void LastName()      //UC2
         {
-            Console.WriteLine("Enter your FirstName");
+            Console.WriteLine("Enter your LastName");
             string userInput = Console.ReadLine();
             string regexCondition = "^[A-Z]{1}[a-z]{2,}$";
             Iteration(userInput, regexCondition);
         }
-       
+
         public static void Iteration(string userInput, string regexCondition)
         {
             if (Regex.IsMatch(userInput, regexCondition))

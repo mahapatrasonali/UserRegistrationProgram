@@ -9,11 +9,11 @@ namespace UserRegistration
 {
     public class UserName
     {
-        public static void Passmin1num()      //UC7
+        public static void Passmin1specialchar()      //UC8
         {
             Console.WriteLine("Enter your Password");
             string userInput = Console.ReadLine();
-            string regexCondition = "^[a-zA-Z]{7}[0-9]{1}$";
+            string regexCondition = "^[a-zA-Z]{4}[@,#,&,*,$]{1}[0-9]{3}$";
             Iteration(userInput, regexCondition);
         }
 

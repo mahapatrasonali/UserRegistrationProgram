@@ -9,11 +9,11 @@ namespace UserRegistration
 {
     public class UserName
     {
-        public static void EmailValidating()      //UC3
+        public static void PhoneNumberValidating()      //UC4
         {
-            Console.WriteLine("Enter your EmailId");
+            Console.WriteLine("Enter your PhoneNumber");
             string userInput = Console.ReadLine();
-            string regexCondition = "^[a-z]{3,7}.?[a-z0-9]{3,8}@[a-z]{3,8}.(com|org)$";
+            string regexCondition = "^(+)[0-9]{2}[ ][0-9]{10}$";
             Iteration(userInput, regexCondition);
         }
 
